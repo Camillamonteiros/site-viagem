@@ -4,23 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Site de viagem</title>
 </head>
 
 <body>
-    <h1>Site de viagem</h1>
-    <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Destinos</a></li>
-        <li><a href="#">Pacotes</a></li>
-    </ul>
+    <header>
+        <img src="./logosemfundo.png">
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Destinos</a></li>
+                <li><a href="#">Pacotes</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="Sobre">
         <h2>Sobre</h2>
         <p>Neste espaço, você encontrará informações detalhadas sobre os destinos mais procurados, pacotes de viagens
             disponíveis e curiosidades sobre os passeios em diversos lugares.</p>
         <h2>Destinos mais pesquisados</h2>
     </div>
-    <ul>
+    <ul class="paises">
         <li><a href="#Grecia">Grécia</a></li>
         <li><a href="#Mexico">México</a></li>
         <li><a href="#França">França</a></li>
@@ -100,28 +110,48 @@
         <h5>México</h5>
         <p>Cancún, uma cidade mexicana situada na Península de Iucatã, na costa do Mar do Caribe, é conhecida por suas
             praias, seus vários resorts e sua vida noturna. </p>
-        <img src="cancun.jpeg" alt="Cáncun, México"  width="250" height="200">
+        <img src="cancun.jpeg" alt="Cáncun, México" width="250" height="200">
         <h4>Paris</h4>
         <h5>França</h5>
-        <p>Paris, a capital da França, é uma importante cidade europeia e um centro mundial de arte, moda, gastronomia e cultura. Sua paisagem urbana do século XIX é cortada por avenidas largas e pelo rio Sena. A cidade é conhecida por monumentos como a Torre Eiffel e a Catedral de Notre-Dame, uma construção gótica do século XII, sendo famosa também pela cultura dos cafés e por lojas de estilistas famosos na Rue du Faubourg Saint-Honoré. </p>
-        <img src="paris.jpg" alt="Paris, França"  width="250" height="200">
+        <p>Paris, a capital da França, é uma importante cidade europeia e um centro mundial de arte, moda, gastronomia e
+            cultura. Sua paisagem urbana do século XIX é cortada por avenidas largas e pelo rio Sena. A cidade é
+            conhecida por monumentos como a Torre Eiffel e a Catedral de Notre-Dame, uma construção gótica do século
+            XII, sendo famosa também pela cultura dos cafés e por lojas de estilistas famosos na Rue du Faubourg
+            Saint-Honoré. </p>
+        <img src="paris.jpg" alt="Paris, França" width="250" height="200">
         <h4>Barcelona</h4>
         <h5>Espanha</h5>
-        <p>Barcelona, capital cosmopolita da região da Catalunha na Espanha, é conhecida pela sua arte e arquitetura. A fantástica igreja da Sagrada Família e outros monumentos modernistas projetados por Antoni Gaudí marcam a cidade </p>
-        <img src="barcelona.jpeg" alt="Barcelona, Espanha"  width="250" height="200">
+        <p>Barcelona, capital cosmopolita da região da Catalunha na Espanha, é conhecida pela sua arte e arquitetura. A
+            fantástica igreja da Sagrada Família e outros monumentos modernistas projetados por Antoni Gaudí marcam a
+            cidade </p>
+        <img src="barcelona.jpeg" alt="Barcelona, Espanha" width="250" height="200">
     </div>
     <div class="Vídeos">
-    <h2>Veja um pouco sobre os destinos</h2>
-    <h3>Mykonos</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/po2T3OX5WfE?si=1KtpH71zINarBDTs&amp;start=440" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <h3>Cancún</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/oMEJSBKcziU?si=jVCR2GWFHkRx8VQA&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <h3>Paris</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/wroGPb4-3yM?si=7EXAVJxFXViwxc_U&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <h3>Barcelona</h3>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/uOzwwZxjPRs?si=tCmIp5JGmQRz8NQi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+        <h2>Veja um pouco sobre os destinos</h2>
+        <h3>Mykonos</h3>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/po2T3OX5WfE?si=1KtpH71zINarBDTs&amp;start=440"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Cancún</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oMEJSBKcziU?si=jVCR2GWFHkRx8VQA&amp;start=7"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Paris</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wroGPb4-3yM?si=7EXAVJxFXViwxc_U&amp;start=7"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Barcelona</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uOzwwZxjPRs?si=tCmIp5JGmQRz8NQi"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
-<a href="">Camilla Aparecida Monteiro, Filipe Augusto, Mateus Kennedy, Victor Hugo e Ryan Abranches</a>
+    <a href="">Camilla Aparecida Monteiro, Filipe Augusto, Mateus Kennedy, Victor Hugo e Ryan Abranches</a>
 </body>
+
 </html>
