@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgba(255,255, 255,0);
+    font-family: "Montserrat", sans-serif;
+    /* font-size: 16px; */
+    height: 100vh;
+}
+header{
+    position: relative;
+    background-color: rgba(114, 155, 189, 0.71);
+    padding: 10px 20px;
+    color: rgb(2, 46, 84);
+    /* border-radius: 0 0 15px 15px; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-login{
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+/* .div-img{
+    
+} */
+
+img{
+    width: 10rem;
+}
+nav{
+    /* position: absolute; */
+    /* top: 50%; */
+    /* right: 20px; */
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none; 
+}
+nav ul li{
+    margin-left: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sobre{
+    background-image: url(/public/assets/img/praia-ceu-azul.jpg);
+    background-repeat: no-repeat;
+    /* background-clip:inherit; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.sobre div{
+    /* width: 90%; */
+    margin: 4rem;
+}
