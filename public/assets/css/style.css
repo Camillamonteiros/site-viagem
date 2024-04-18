@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Montserrat", sans-serif;
+    /* font-size: 16px; */
+    height: 100vh;
+}
+
+header {
+    position: relative;
+    background-color: rgba(114, 155, 189, 0.71);
+    padding: 10px 20px;
+    color: rgb(2, 46, 84);
+    /* border-radius: 0 0 15px 15px; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-login {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+img {
+    width: 10rem;
+}
+
+nav {
+    /* position: absolute; */
+    /* top: 50%; */
+    /* right: 20px; */
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.sobre div {
+    /* width: 90%; */
+    margin: 4rem;
+}
+
+.cards-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 4rem; */
+}
+
+.sec-destinos {
+    background-color: rgb(170, 200, 255);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.cards-all {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 4px 4px 12px #aaaa;
+    transition: 0.3s;
+    width: 200px;
+    margin: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-conteudo {
+    padding: 20px;
+}
+
+.card-conteudo span {
+    color: green;
+    font-weight: bold;
+}
+
+.card-conteudo button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+form {
+    background-color: aquamarine;
+    padding: 4rem 4rem;
+    margin: 4rem 0rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.title-form {
+    display: flex;
+    align-items: center;
+}
+
+.title-form h3 {
+    font-size: 3rem;
+}
+
+.todo-formulario {
+    width: 50%;
+}
+
+
+.radio-pacotes {
+    margin: 1rem 0;
+}
+
+.nome-email div input {
+    width: 100%;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border-style: none;
+    padding: 0rem 0.5rem;
+}
+
+textarea {
+    width: 100%;
+    height: 4rem;
+    font-size: 1rem;
+    border-radius: 0.3rem;
+    border-style: none;
+    padding: 0rem 0.5rem;
+}
+
+.div-label-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.radio-pacotes input {
+    margin-left: 1rem;
+}

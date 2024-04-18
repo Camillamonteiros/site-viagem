@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Site de viagem</title>
+</head>
+
+<body>
+    <header>
+        <div class="div-img">
+            <img src="/public/assets/img/logosemfundo-corte.png
+            ">
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Destinos</a></li>
+                <li><a href="#">Pacotes</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="button-login">Login</button>
+    </header>
+    <section class="sobre">
+        <div class="sobre-text">
+            <h1>Os melhores pacotes, hotéis e atividades para você!</h1>
+            <p>Neste espaço, você encontrará informações detalhadas sobre os destinos mais procurados, pacotes de
+                viagens
+                disponíveis e curiosidades sobre os passeios em diversos lugares.</p>
+        </div>
+    </section>
+    <section class="sec-destinos">
+        <h2>Destinos mais pesquisados</h2>
+        <div class="cards-all">
+            <div class="card">
+                <img src="/public/assets/img/panagia.jpeg">
+                <div class="card-conteudo">
+                    <h1>Grécia</h1>
+                    <h3>descrição</h3>
+                    <span>R$ 00,00</span>
+                    <button>CLICK AQUI</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/public/assets/img/panagia.jpeg">
+                <div class="card-conteudo">
+                    <h1>Grécia</h1>
+                    <h3>descrição</h3>
+                    <span>R$ 00,00</span>
+                    <button>CLICK AQUI</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/public/assets/img/panagia.jpeg">
+                <div class="card-conteudo">
+                    <h1>Grécia</h1>
+                    <h3>descrição</h3>
+                    <span>R$ 00,00</span>
+                    <button>CLICK AQUI</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/public/assets/img/panagia.jpeg">
+                <div class="card-conteudo">
+                    <h1>Grécia</h1>
+                    <h3>descrição</h3>
+                    <span>R$ 00,00</span>
+                    <button>CLICK AQUI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <ul class="paises">
+            <li><a href="#Grecia">Grécia</a></li>
+            <li><a href="#Mexico">México</a></li>
+            <li><a href="#França">França</a></li>
+            <li><a href="#Espanha">Espanha</a></li>
+        </ul> -->
+    </section>
+
+    <h3>Pacotes de viagem</h3>
+    <table>
+        <tr>
+            <th>Destino</th>
+            <th>Dias</th>
+            <th>Hospedes</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+        <tr>
+            <td>Mykonos - Grécia</td>
+            <td>4 dias</td>
+            <td>2 adultos</td>
+            <td>R$ 16.600,00</td>
+        </tr>
+        <tr>
+            <td>Cancún - México</td>
+            <td>5 dias</td>
+            <td>2 adultos</td>
+            <td>R$4.100,00</td>
+        </tr>
+        <tr>
+            <td>Paris- França</td>
+            <td>8 dias</td>
+            <td>2 adultos</td>
+            <td>R$9.680,00</td>
+        </tr>
+        <tr>
+            <td>Barcelona - Espanha</td>
+            <td>10 dias</td>
+            <td>1 adulto</td>
+            <td>R$11.000,00</td>
+        </tr>
+        </tr>
+    </table>
+
+    <form class="reservar-pacote" action="" method="post">
+        <div class="title-form">
+            <h3>Gostaria de reservar algum pacote?</h3>
+        </div>
+        <div class="todo-formulario">
+            <div class="nome-email">
+                <div class="div-label-input">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="div-label-input">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="radio-pacotes">
+                <label>Pacote:</label>
+                <div>
+                    <input type="radio" id="grecia" name="pacote" value="grecia" required>
+                    <label for="grecia">Grécia/Mykonos</label>
+                </div>
+                <div>
+                    <input type="radio" id="mexico" name="pacote" value="mexico" required>
+                    <label for="mexico">Mexico/Cancún</label>
+                </div>
+                <div>
+                    <input type="radio" id="eua" name="pacote" value="eua" required>
+                    <label for="frança">França/Paris</label>
+                </div>
+                <div>
+                    <input type="radio" id="espanha" name="pacote" value="espanha" required>
+                    <label for="espanha">Espanha/Barcelona</label>
+                </div>
+                <div>
+                    <input type="radio" id="outro" name="pacote" value="outro" required>
+                    <label for="outro">Outro destino</label>
+                </div>
+
+            </div>
+
+            <label for="mensagem">Algum outro destino:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+            <div>
+
+                <label for="newsletter">Desejo receber informações por e-mail:</label>
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                    <label for="newsletter">Sim</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                    <label for="newsletter">Não</label>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <div class="locais">
+        <h4>Mykonos</h4>
+        <h5>Grécia</h5>
+        <p> Mykonos é uma ilha do arquipélago Cíclades no Mar Ageu. Ela é popularmente conhecida pela sua atmosfera
+            festiva no verão. Praias como Paradise e Super Paradise têm bares tocando música no mais alto volume.
+            Grandes danceterias atraem DJs mundialmente conhecidos, e normalmente ficam abertas até bem tarde. Em
+            mykonos tambem tem passeios turisticos </p>
+        <img src="/public/assets/img/panagia.jpeg" alt="Igreja de Panagia Paraportiani, Mykonos" width="250"
+            height="200">
+        <h4>Cancún</h4>
+        <h5>México</h5>
+        <p>Cancún, uma cidade mexicana situada na Península de Iucatã, na costa do Mar do Caribe, é conhecida por suas
+            praias, seus vários resorts e sua vida noturna. </p>
+        <img src="/public/assets/img/cancun.jpeg" alt="Cáncun, México" width="250" height="200">
+        <h4>Paris</h4>
+        <h5>França</h5>
+        <p>Paris, a capital da França, é uma importante cidade europeia e um centro mundial de arte, moda, gastronomia e
+            cultura. Sua paisagem urbana do século XIX é cortada por avenidas largas e pelo rio Sena. A cidade é
+            conhecida por monumentos como a Torre Eiffel e a Catedral de Notre-Dame, uma construção gótica do século
+            XII, sendo famosa também pela cultura dos cafés e por lojas de estilistas famosos na Rue du Faubourg
+            Saint-Honoré. </p>
+        <img src="/public/assets/img/paris.jpg" alt="Paris, França" width="250" height="200">
+        <h4>Barcelona</h4>
+        <h5>Espanha</h5>
+        <p>Barcelona, capital cosmopolita da região da Catalunha na Espanha, é conhecida pela sua arte e arquitetura. A
+            fantástica igreja da Sagrada Família e outros monumentos modernistas projetados por Antoni Gaudí marcam a
+            cidade </p>
+        <img src="/public/assets/img/barcelona.jpeg" alt="Barcelona, Espanha" width="250" height="200">
+    </div>
+    <div class="Vídeos">
+        <h2>Veja um pouco sobre os destinos</h2>
+        <h3>Mykonos</h3>
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/po2T3OX5WfE?si=1KtpH71zINarBDTs&amp;start=440"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Cancún</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/oMEJSBKcziU?si=jVCR2GWFHkRx8VQA&amp;start=7"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Paris</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wroGPb4-3yM?si=7EXAVJxFXViwxc_U&amp;start=7"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Barcelona</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uOzwwZxjPRs?si=tCmIp5JGmQRz8NQi"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <footer>
+        <a href="">Camilla Aparecida Monteiro, Filipe Augusto, Mateus Kennedy, Victor Hugo e Ryan Abranches</a>
+    </footer>
+</body>
+
+</html>
