@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,20 +29,59 @@
     </header>
     <section class="sobre">
         <div class="sobre-text">
-            <h2>Sobre</h2>
+            <h1>Os melhores pacotes, hotéis e atividades para você!</h1>
             <p>Neste espaço, você encontrará informações detalhadas sobre os destinos mais procurados, pacotes de
                 viagens
                 disponíveis e curiosidades sobre os passeios em diversos lugares.</p>
         </div>
     </section>
-    <section>
+    <section class="sec-destinos">
         <h2>Destinos mais pesquisados</h2>
-        <ul class="paises">
+        <div class="cards-all">
+            <div class="card">
+                <img src="/public/assets/img/panagia.jpeg">
+                <div class="card-conteudo">
+                    <h1>Grécia</h1>
+                    <h3>descrição</h3>
+                    <span>R$ 00,00</span>
+                    <button>CLICK AQUI</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/public/assets/img/panagia.jpeg">
+                <div class="card-conteudo">
+                    <h1>Grécia</h1>
+                    <h3>descrição</h3>
+                    <span>R$ 00,00</span>
+                    <button>CLICK AQUI</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/public/assets/img/panagia.jpeg">
+                <div class="card-conteudo">
+                    <h1>Grécia</h1>
+                    <h3>descrição</h3>
+                    <span>R$ 00,00</span>
+                    <button>CLICK AQUI</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="/public/assets/img/panagia.jpeg">
+                <div class="card-conteudo">
+                    <h1>Grécia</h1>
+                    <h3>descrição</h3>
+                    <span>R$ 00,00</span>
+                    <button>CLICK AQUI</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- <ul class="paises">
             <li><a href="#Grecia">Grécia</a></li>
             <li><a href="#Mexico">México</a></li>
             <li><a href="#França">França</a></li>
             <li><a href="#Espanha">Espanha</a></li>
-        </ul>
+        </ul> -->
     </section>
 
     <h3>Pacotes de viagem</h3>
@@ -81,32 +119,61 @@
         </tr>
         </tr>
     </table>
-    <h3>Gostaria de reservar algum pacote?</h3>
-    <form action="" method="post">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" required><br>
 
-        <label>Pacote:</label><br>
-        <input type="radio" id="grecia" name="pacote" value="grecia" required>
-        <label for="grecia">Grécia/Mykonos</label>
-        <input type="radio" id="mexico" name="pacote" value="mexico" required>
-        <label for="mexico">Mexico/Cancún</label>
-        <input type="radio" id="eua" name="pacote" value="eua" required>
-        <label for="frança">França/Paris</label>
-        <input type="radio" id="espanha" name="pacote" value="espanha" required>
-        <label for="espanha">Espanha/Barcelona</label>
-        <input type="radio" id="outro" name="pacote" value="outro" required>
-        <label for="outro">Outro destino</label>
-        <br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
+    <form class="reservar-pacote" action="" method="post">
+        <div class="title-form">
+            <h3>Gostaria de reservar algum pacote?</h3>
+        </div>
+        <div class="todo-formulario">
+            <div class="nome-email">
+                <div class="div-label-input">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="div-label-input">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            <div class="radio-pacotes">
+                <label>Pacote:</label>
+                <div>
+                    <input type="radio" id="grecia" name="pacote" value="grecia" required>
+                    <label for="grecia">Grécia/Mykonos</label>
+                </div>
+                <div>
+                    <input type="radio" id="mexico" name="pacote" value="mexico" required>
+                    <label for="mexico">Mexico/Cancún</label>
+                </div>
+                <div>
+                    <input type="radio" id="eua" name="pacote" value="eua" required>
+                    <label for="frança">França/Paris</label>
+                </div>
+                <div>
+                    <input type="radio" id="espanha" name="pacote" value="espanha" required>
+                    <label for="espanha">Espanha/Barcelona</label>
+                </div>
+                <div>
+                    <input type="radio" id="outro" name="pacote" value="outro" required>
+                    <label for="outro">Outro destino</label>
+                </div>
 
-        <label for="mensagem">Algum outro destino:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br>
+            </div>
 
-        <label for="newsletter">Desejo receber informações por e-mail:</label><br>
-        <input type="checkbox" id="newsletter" name="newsletter" value="sim">
-        <label for="newsletter">Sim</label><br><br>
+            <label for="mensagem">Algum outro destino:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+            <div>
+
+                <label for="newsletter">Desejo receber informações por e-mail:</label>
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                    <label for="newsletter">Sim</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                    <label for="newsletter">Não</label>
+                </div>
+            </div>
+
+        </div>
     </form>
     <div class="locais">
         <h4>Mykonos</h4>
@@ -115,7 +182,8 @@
             festiva no verão. Praias como Paradise e Super Paradise têm bares tocando música no mais alto volume.
             Grandes danceterias atraem DJs mundialmente conhecidos, e normalmente ficam abertas até bem tarde. Em
             mykonos tambem tem passeios turisticos </p>
-        <img src="/public/assets/img/panagia.jpeg" alt="Igreja de Panagia Paraportiani, Mykonos" width="250" height="200">
+        <img src="/public/assets/img/panagia.jpeg" alt="Igreja de Panagia Paraportiani, Mykonos" width="250"
+            height="200">
         <h4>Cancún</h4>
         <h5>México</h5>
         <p>Cancún, uma cidade mexicana situada na Península de Iucatã, na costa do Mar do Caribe, é conhecida por suas
@@ -160,9 +228,9 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
-<footer>
-    <a href="">Camilla Aparecida Monteiro, Filipe Augusto, Mateus Kennedy, Victor Hugo e Ryan Abranches</a>
-</footer>
+    <footer>
+        <a href="">Camilla Aparecida Monteiro, Filipe Augusto, Mateus Kennedy, Victor Hugo e Ryan Abranches</a>
+    </footer>
 </body>
 
 </html>
