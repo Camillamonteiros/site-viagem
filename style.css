@@ -20,6 +20,7 @@ nav{
     right: 20px;
 }
 nav ul {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     list-style-type: none; 
@@ -31,4 +32,7 @@ nav ul li{
 nav ul li a {
     text-decoration: none;
     color: inherit;
+}
+.sobre{
+    color: rgb(45, 75, 101);
 }
