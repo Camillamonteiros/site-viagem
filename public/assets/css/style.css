@@ -59,9 +59,6 @@ nav ul li a {
 }
 
 .sobre{
-    background-image: url(/public/assets/img/praia-ceu-azul.jpg);
-    background-repeat: no-repeat;
-    /* background-clip:inherit; */
     display: flex;
     align-items: center;
     justify-content: center;
