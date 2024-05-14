@@ -31,8 +31,7 @@
         <div class="sobre-text">
             <h1>Os melhores pacotes, hotéis e atividades para você!</h1>
             <p>Neste espaço, você encontrará informações detalhadas sobre os destinos mais procurados, pacotes de
-                viagens
-                disponíveis e curiosidades sobre os passeios em diversos lugares.</p>
+                viagens disponíveis e curiosidades sobre os passeios em diversos lugares.</p>
         </div>
     </section>
     <section class="sec-destinos">
@@ -85,14 +84,15 @@
     </section>
 
     <h3>Pacotes de viagem</h3>
-    <table>
-        <tr>
-            <th>Destino</th>
-            <th>Dias</th>
-            <th>Hospedes</th>
-            <th>Valor</th>
-        </tr>
-        <tr>
+    <table id="pacotesviagens">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Destino</th>
+                <th onclick="sortTable(1)">Dias</th>
+                <th onclick="sortTable(2)">Hóspedes</th>
+                <th onclick="sortTable(3)">Valor</th>
+            </tr>
+        </thead>
         <tr>
             <td>Mykonos - Grécia</td>
             <td>4 dias</td>
@@ -229,8 +229,9 @@
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <footer>
-        <a href="">Camilla Aparecida Monteiro, Filipe Augusto, Mateus Kennedy, Victor Hugo e Ryan Abranches</a>
+        <a href="">Camilla Aparecida Monteiro, Filipe Augusto, Victor Hugo e Ryan Abranches</a>
     </footer>
+    <script src="/public/assets/script/script.js"></script>
 </body>
 
 </html>

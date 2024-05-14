@@ -14,7 +14,7 @@ body {
 header {
     position: relative;
     background-color: rgba(114, 155, 189, 0.71);
-    padding: 10px 20px;
+    padding: 3px 6px;
     color: rgb(2, 46, 84);
     /* border-radius: 0 0 15px 15px; */
     overflow: hidden;
@@ -23,7 +23,13 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    transition: background-color 0.10s ease;
+    z-index: 1000;
 }
+
+header.scrolled {
+    background-color: rgba(114, 155, 189, 0.2);
+ }
 
 .button-login {
     width: 6rem;
@@ -136,6 +142,24 @@ nav ul li a {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+th:hover {
+    background-color: #ddd;
 }
 
 form {
