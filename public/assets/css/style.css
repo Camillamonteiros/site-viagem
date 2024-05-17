@@ -247,9 +247,14 @@ textarea {
     box-shadow: 4px 4px 12px #5a5a5aaa;
     transition: 0.3s;
     width: 400px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 12px;
     overflow: hidden;
+    /* aspect-ratio: 16 / 9; */
+}
+iframe.aspect{
+    aspect-ratio: 16 / 9;
+    width: 100%;
 }
 
 .card-videos:hover {
