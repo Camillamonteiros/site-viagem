@@ -83,27 +83,30 @@ nav ul li a {
 .cards-all {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .sec-destinos {
     background-color: rgb(170, 200, 255);
     padding: 1rem 0;
     text-align: center;
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
 }
 
 
-
 .card {
-    background-color: #fff;
-    box-shadow: 4px 4px 12px #5a5a5aaa;
-    transition: 0.3s;
-    /* width: 250px; */
-    margin: 20px;
-    border-radius: 12px;
-    overflow: hidden;
+        background-color: #fff;
+        box-shadow: 4px 4px 12px #5a5a5aaa;
+        transition: 0.3s;
+        width: 350px;
+        height: 650px; /* Defina a altura desejada para os cards */
+        margin: 20px;
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        
 }
 
 .card:hover {
@@ -117,28 +120,42 @@ nav ul li a {
 }
 
 .card:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05); /* Ajustar o efeito hover */
 }
 
 .card-conteudo {
     padding: 20px;
+    flex: 1; /* Para expandir e ocupar todo o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para alinhar o conteúdo */
+}
+
+.card-conteudo h1 {
+    font-size: 1.5rem;
+}
+
+.card-conteudo h3 {
+    font-size: 0.9rem; /* Diminuir a fonte da descrição */
+    line-height: 1.6; /* Aumentar a altura da linha para melhor legibilidade */
 }
 
 .card-conteudo span {
     color: green;
     font-weight: bold;
+    display: block;
+
 }
 
 .card-conteudo button {
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 10px 20px; /* Ajustar o padding do botão */
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
 }
