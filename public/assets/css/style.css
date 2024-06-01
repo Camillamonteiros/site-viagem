@@ -511,3 +511,23 @@ td:first-child {
 tr:nth-child(even) {
     background-color: #fafafa;
 }
+
+button.enviar {
+    background-color: #9ef5a1; 
+    border: none;
+    color: white; 
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px; 
+    transition-duration: 0.4s; 
+}
+button.enviar:hover {
+    background-color: white; 
+    color: #4CAF50; /* Verde */
+    border: 2px solid #4CAF50; /* Borda verde */
+}
