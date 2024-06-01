@@ -20,22 +20,22 @@
         </div>
         <nav id="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Destinos</a></li>
-                <li><a href="#">Pacotes</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#info">Saiba mais</a></li>
+                <li><a href="#contatos">Contato</a></li>
             </ul>
         </nav>
         <button class="button-login">Login</button>
     </header>
-    <section class="sobre">
+    <section id="sobre" class="sobre">
         <div class="sobre-text">
             <h1>Os melhores pacotes, hotéis e atividades para você!</h1>
             <h2>Neste espaço, você encontrará informações detalhadas sobre os destinos mais procurados, pacotes de
                 viagens disponíveis e curiosidades sobre os passeios em diversos lugares.</h2>
         </div>
     </section>
-    <section class="sec-destinos">
+    <section  id="destinos"  class="sec-destinos">
         <h2>Destinos mais pesquisados</h2>
         <div class="cards-all">
             <div class="card">
@@ -100,48 +100,61 @@
             <li><a href="#Espanha">Espanha</a></li>
         </ul> -->
     </section>
-    <div class="pacotes-viagem">
-        <div>
-            <h3>Pacotes de viagem</h3>
+    <div id="info" class="informações">
+        <div class="nome_tabela">
+            <h3>Saiba mais sobre a cultura dos Países</h3>
         </div>
 
         <table>
-            <tr>
-                <th>Destino</th>
-                <th>Dias</th>
-                <th>Hospedes</th>
-                <th>Valor</th>
-            </tr>
-            <tr>
-            <tr>
-                <td>Mykonos - Grécia</td>
-                <td>4 dias</td>
-                <td>2 adultos</td>
-                <td>R$ 16.600,00</td>
-            </tr>
-            <tr>
-                <td>Cancún - México</td>
-                <td>5 dias</td>
-                <td>2 adultos</td>
-                <td>R$4.100,00</td>
-            </tr>
-            <tr>
-                <td>Paris- França</td>
-                <td>8 dias</td>
-                <td>2 adultos</td>
-                <td>R$9.680,00</td>
-            </tr>
-            <tr>
-                <td>Barcelona - Espanha</td>
-                <td>10 dias</td>
-                <td>1 adulto</td>
-                <td>R$11.000,00</td>
-            </tr>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Cidade</th>
+                    <th>País</th>
+                    <th>Clima</th>
+                    <th>Pontos Turísticos</th>
+                    <th>Gastronomia</th>
+                    <th>Eventos Culturais</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mykonos</td>
+                    <td>Grécia</td>
+                    <td>Verão quente, inverno suave</td>
+                    <td>Little Venice, Windmills of Kato Mili, Delos Island</td>
+                    <td>Moussaka, Gyros, Souvlaki</td>
+                    <td>Festival de Música de Mykonos, Mykonos Biennale</td>
+                </tr>
+                <tr>
+                    <td>Cancún</td>
+                    <td>México</td>
+                    <td>Quente e úmido o ano todo</td>
+                    <td>Zona Hoteleira, Parque Xcaret, Ruínas de Tulum</td>
+                    <td>Ceviche, Tacos, Guacamole</td>
+                    <td>Festival de Vida e Morte, Carnaval de Cancún</td>
+                </tr>
+                <tr>
+                    <td>Paris</td>
+                    <td>França</td>
+                    <td>Temperado, com invernos frios e verões amenos</td>
+                    <td>Torre Eiffel, Museu do Louvre, Catedral de Notre-Dame</td>
+                    <td>Croissants, Macarons, Coq au Vin</td>
+                    <td>Festival de Música de Paris, Nuit Blanche</td>
+                </tr>
+                <tr>
+                    <td>Barcelona</td>
+                    <td>Espanha</td>
+                    <td>Temperado, com invernos suaves e verões quentes</td>
+                    <td>Sagrada Família, Parque Güell, Bairro Gótico</td>
+                    <td>Tapas, Paella, Crema Catalana</td>
+                    <td>Festival La Mercè, Carnaval de Barcelona</td>
+                </tr>
+            </tbody>
         </table>
+        
     </div>
 
-    <form class="reservar-pacote" action="" method="post">
+    <form id="contatos" class="reservar-pacote" action="" method="post">
         <div class="title-form">
             <h3>Gostaria de reservar algum pacote?</h3>
         </div>
@@ -197,62 +210,57 @@
         </div>
     </form>
     <div class="locais">
-        <div>
+        <div id="mykonos" class="cidades_paises">
+            <div>
+                <img src="/public/assets/img/panagia.jpeg" alt="Igreja de Panagia Paraportiani, Mykonos" width="250" height="200">
+            </div>
             <div>
                 <h4>Mykonos</h4>
                 <h5>Grécia</h5>
-                <p> Mykonos é uma ilha do arquipélago Cíclades no Mar Ageu. Ela é popularmente conhecida pela sua
-                    atmosfera
-                    festiva no verão. Praias como Paradise e Super Paradise têm bares tocando música no mais alto
-                    volume.
-                    Grandes danceterias atraem DJs mundialmente conhecidos, e normalmente ficam abertas até bem tarde.
-                    Em
-                    mykonos tambem tem passeios turisticos </p>
+                <p>Mykonos é uma ilha do arquipélago Cíclades no Mar Egeu. Ela é popularmente conhecida pela sua
+                    atmosfera festiva no verão. Praias como Paradise e Super Paradise têm bares tocando música no mais alto
+                    volume. Grandes danceterias atraem DJs mundialmente conhecidos, e normalmente ficam abertas até bem tarde.
+                    Em Mykonos também tem passeios turísticos.</p>
             </div>
-            <div>
-                <img src="/public/assets/img/panagia.jpeg" alt="Igreja de Panagia Paraportiani, Mykonos" width="250"
-                    height="200">
-            </div>
+            
         </div>
-        <div>
+        <div id="cancun" class="cidades_paises">
+            <div>
+                <img src="/public/assets/img/cancun.jpeg" alt="Cáncun, México" width="250" height="200">
+            </div>
             <div>
                 <h4>Cancún</h4>
                 <h5>México</h5>
                 <p>Cancún, uma cidade mexicana situada na Península de Iucatã, na costa do Mar do Caribe, é conhecida
-                    por
-                    suas
-                    praias, seus vários resorts e sua vida noturna. </p>
-            </div>
-            <div>
-                <img src="/public/assets/img/cancun.jpeg" alt="Cáncun, México" width="250" height="200">
-            </div>
+                    por suas praias, seus vários resorts e sua vida noturna. </p>
+                </div>   
         </div>
-        <div>
+        <div id="paris" class="cidades_paises">
+            <div>
+                <img src="/public/assets/img/paris.jpg" alt="Paris, França" width="250" height="200">
+            </div>
             <div>
                 <h4>Paris</h4>
                 <h5>França</h5>
                 <p>Paris, a capital da França, é uma importante cidade europeia e um centro mundial de arte, moda,
-                    gastronomia e
-                    cultura. Sua paisagem urbana do século XIX é cortada por avenidas largas e pelo rio Sena. A cidade é
+                    gastronomia e cultura. Sua paisagem urbana do século XIX é cortada por avenidas largas e pelo rio Sena. A cidade é
                     conhecida por monumentos como a Torre Eiffel e a Catedral de Notre-Dame, uma construção gótica do
-                    século
-                    XII, sendo famosa também pela cultura dos cafés e por lojas de estilistas famosos na Rue du Faubourg
+                    século XII, sendo famosa também pela cultura dos cafés e por lojas de estilistas famosos na Rue du Faubourg
                     Saint-Honoré. </p>
+            </div>    
+        </div>
+        <div id="barcelona" class="cidades_paises">
+            <div>
+                <img src="/public/assets/img/barcelona.jpeg" alt="Barcelona, Espanha" width="250" height="200">
             </div>
             <div>
-                <img src="/public/assets/img/paris.jpg" alt="Paris, França" width="250" height="200">
+                <h4>Barcelona</h4>
+                <h5>Espanha</h5>
+                <p>Barcelona, capital cosmopolita da região da Catalunha na Espanha, é conhecida pela sua arte e
+                    arquitetura. A fantástica igreja da Sagrada Família e outros monumentos modernistas projetados por Antoni Gaudí marcam
+                    a cidade.</p>
             </div>
         </div>
-        <div>
-            <h4>Barcelona</h4>
-            <h5>Espanha</h5>
-            <p>Barcelona, capital cosmopolita da região da Catalunha na Espanha, é conhecida pela sua arte e
-                arquitetura. A
-                fantástica igreja da Sagrada Família e outros monumentos modernistas projetados por Antoni Gaudí marcam
-                a
-                cidade </p>
-        </div>
-        <img src="/public/assets/img/barcelona.jpeg" alt="Barcelona, Espanha" width="250" height="200">
     </div>
     <div class="sec-videos">
         <h2>Veja um pouco sobre os destinos</h2>
@@ -310,12 +318,10 @@
                 </div>
             </div>
         </div>
-
     </div>
     <footer>
         <a href="">Camilla Aparecida Monteiro, Filipe Augusto, Victor Hugo e Ryan Abranches</a>
     </footer>
     <script src="/public/assets/script/script.js"></script>
 </body>
-
 </html>
