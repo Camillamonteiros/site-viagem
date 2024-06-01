@@ -12,11 +12,8 @@ body {
 }
 
 header {
-    position: relative;
-    background-color: rgba(114, 155, 189, 0.71);
     padding: 3px 6px;
     color: rgb(2, 46, 84);
-    /* border-radius: 0 0 15px 15px; */
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -24,7 +21,10 @@ header {
     justify-content: space-between;
     width: 100%;
     transition: background-color 0.10s ease;
-    z-index: 1000;
+    height: 4rem;
+    backdrop-filter: blur(90px);
+
+
 }
 
 header.scrolled {
@@ -43,9 +43,6 @@ header.scrolled {
 }
 
 nav {
-    /* position: absolute; */
-    /* top: 50%; */
-    /* right: 20px; */
     display: flex;
     justify-content: center;
 }
@@ -62,24 +59,34 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: inherit;
+    color: black;
+    transition: 0.5s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: rgb(235, 230, 230);
 }
 
 .sobre {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
     width: 100%;
-    height: 36rem;
     background: linear-gradient(rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.144)), url(/public/assets/img/praia-sobre.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
 }
 
-.sobre div {
+.sobre .sobre-text {
     width: 60%;
     margin: 4rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .sobre-text h1 {
@@ -134,7 +141,6 @@ nav ul li a {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-
 }
 
 .card:hover {
@@ -226,11 +232,6 @@ form {
     font-size: 3rem;
 }
 
-/* .todo-formulario {
-    width: 50%;
-} */
-
-
 .radio-pacotes {
     margin: 1rem 0;
 }
@@ -264,11 +265,131 @@ textarea {
     margin-left: 1rem;
 }
 
+/* ACIMA DOS VIDEOS */
+
+.titulo-local{
+    padding: 0rem 4rem;
+}
+
+.locais {
+    /* background-color: #1b411c; */
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    border-radius: 3rem;
+    flex-flow: wrap;
+    gap: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.box-img {
+    height: 290px;
+    width: 290px;
+    background-image: url('https://i.ibb.co/S0yLdk5/img4.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0.5rem;
+
+
+}
+
+.box-img img {
+    width: 100%;
+
+}
+
+.porcentagem {
+    position: absolute;
+    background-color: rgb(255, 199, 72);
+    margin: 0.5rem 0 0rem -0.5rem;
+    padding: 0.2rem;
+}
+
+.box-style-img {
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    justify-content: center;
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8) -0.08%, rgba(0, 0, 0, 0) 100.96%);
+}
+
+.nome-cidade {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat, sans-serif;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+}
+
+.all-span {
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.valores {
+    text-decoration: line-through;
+    padding: 0px 0.4rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.div-all-valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.9rem 0px 2rem;
+}
+
+.div-all-valores span {
+    color: #fff;
+}
+
+.valor-total span {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    font-weight: bold;
+}
+
+.valor-total span span {
+    font-size: 3.2rem;
+    line-height: 3.9rem;
+    font-weight: bold;
+}
+
+.button-locais {
+    width: 80%;
+}
+
+.button-locais button {
+    height: 40px;
+    border-radius: 2.7rem;
+    color: rgb(255, 255, 255);
+    border: 0.1rem solid rgb(255, 255, 255);
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    width: 100% !important;
+
+}
+
+
+
+
 /*INICIO VIDEOS SOBRE DESTINOS */
 
 
 .sec-videos {
-    background-color: rgb(170, 200, 255);
+    /* background-color: rgb(170, 200, 255); */
     padding: 3rem 0;
     text-align: center;
 }
@@ -299,7 +420,9 @@ iframe.aspect {
 .card-videos:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 /* INICIO LOCAIS */
 
 .locais {
