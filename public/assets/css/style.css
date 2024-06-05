@@ -448,13 +448,13 @@ footer {
 .cidades_paises h4 {
     margin: 10px 0 5px;
     font-size: 1.5em;
-    color: #333;
+    color: #000000;
 }
 
 .cidades_paises h5 {
     margin: 5px 0;
     font-size: 1.2em;
-    color: #777;
+    color: #242323;
 }
 
 .cidades_paises p {
