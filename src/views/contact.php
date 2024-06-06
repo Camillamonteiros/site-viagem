@@ -1,10 +1,10 @@
 <?php
     $host = 'localhost';
-    $db = '';
-    $user = '';
-    $pass ='';
+    $database = 'contatos';
+    $user = 'root';
+    $password ='';
 
-    $conn = new mysqli($host, $user, $pass, $db);
+    $conn = mysqli_connect($host, $user, $password, $database);
 
     if ($conn->connect_error) {
         die("Conexão falhou: " . $conn->connect_error);
