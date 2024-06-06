@@ -23,7 +23,6 @@ header {
     transition: background-color 0.10s ease;
     height: 4rem;
     backdrop-filter: blur(90px);
-    
 
 }
 
@@ -267,17 +266,22 @@ textarea {
 
 /* ACIMA DOS VIDEOS */
 
+.titulo-local{
+    padding: 0rem 4rem;
+}
+
 .locais {
-    background-color: #1b411c;
+    /* background-color: #1b411c; */
     display: flex;
+    flex-direction: column;
     padding: 4rem;
-    margin: 4rem;
     border-radius: 3rem;
     flex-flow: wrap;
     gap: 2rem 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 
 }
 
@@ -288,6 +292,7 @@ textarea {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0.5rem;
 
 
 }
@@ -311,7 +316,7 @@ textarea {
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
-  
+    border-radius: 0.5rem;
     justify-content: center;
     background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.8) -0.08%, rgba(0, 0, 0, 0) 100.96%);
 }
@@ -416,32 +421,5 @@ iframe.aspect {
 }
 
 footer{
-background-color:rgb(94, 94, 94);
-height: 20vh;
-}
-/* INICIO LOCAIS */
-
-
-tr:nth-child(even) {
-    background-color: #fafafa;
-}
-
-button.enviar {
-    background-color: #9ef5a1; 
-    border: none;
-    color: white; 
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px; 
-    transition-duration: 0.4s; 
-}
-button.enviar:hover {
-    background-color: white; 
-    color: #4CAF50; /* Verde */
-    border: 2px solid #4CAF50; /* Borda verde */
+    background-color: rgba(0, 0, 0, 0.8);
 }
