@@ -22,9 +22,8 @@ header {
     width: 100%;
     transition: background-color 0.10s ease;
     height: 4rem;
-    backdrop-filter: blur(90px);
-
-
+    position: absolute;
+    backdrop-filter: blur(20px);
 }
 
 header.scrolled {
@@ -59,13 +58,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     transition: 0.5s ease;
+    font-weight: 700;
 }
 
 nav ul li a:hover {
     text-decoration: none;
-    color: rgb(235, 230, 230);
+    color: rgb(216, 216, 216);
 }
 
 .sobre {
@@ -80,7 +80,7 @@ nav ul li a:hover {
 }
 
 .sobre .sobre-text {
-    width: 60%;
+    width: 80%;
     margin: 4rem;
     height: 30rem;
     display: flex;
@@ -267,7 +267,7 @@ textarea {
 
 /* ACIMA DOS VIDEOS */
 
-.titulo-local{
+.titulo-local {
     padding: 0rem 4rem;
 }
 
@@ -385,6 +385,18 @@ textarea {
 
 
 
+.box-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 1rem 2rem;
+
+}
+
+
+
 /*INICIO VIDEOS SOBRE DESTINOS */
 
 
@@ -420,17 +432,16 @@ iframe.aspect {
 .card-videos:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-footer {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+
+
 /* INICIO LOCAIS */
 
-.locais {
+/* .locais {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+   
     padding: 20px;
-}
+} */
 
 .cidades_paises {
     background: #fff;
@@ -441,7 +452,7 @@ footer {
     padding: 20px;
     max-width: 300px;
     text-align: center;
-    flex: 1 1 calc(33% - 40px); 
+    flex: 1 1 calc(33% - 40px);
 }
 
 .cidades_paises h4 {
@@ -468,11 +479,15 @@ footer {
     width: 100%;
     height: auto;
 }
+
 /*TABELA SAIBA MAIS*/
 .nome_tabela {
     text-align: center;
-    font-size: 24px; 
+    font-size: 24px;
     text-transform: uppercase;
+}
+.nome_tabela h3 {
+   padding: 2rem;
 }
 
 table {
@@ -485,7 +500,8 @@ thead {
     background-color: #f2f2f2;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -513,9 +529,9 @@ tr:nth-child(even) {
 }
 
 button.enviar {
-    background-color: #9ef5a1; 
+    background-color: #9ef5a1;
     border: none;
-    color: white; 
+    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -523,11 +539,48 @@ button.enviar {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 12px; 
-    transition-duration: 0.4s; 
+    border-radius: 12px;
+    transition-duration: 0.4s;
 }
+
 button.enviar:hover {
-    background-color: white; 
-    color: #4CAF50; /* Verde */
-    border: 2px solid #4CAF50; /* Borda verde */
+    background-color: white;
+    color: #4CAF50;
+    /* Verde */
+    border: 2px solid #4CAF50;
+    /* Borda verde */
+}
+
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 40vh;
+}
+.all-name-footer{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.all-name-footer a{
+    color: #a3a3a3;
+}
+.name-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-footer a{
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+#copyright{
+    background-color: rgba(75, 75, 75, 0.8); 
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5f5f5;
+
 }
